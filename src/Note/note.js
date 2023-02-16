@@ -1,10 +1,10 @@
 
 const Note = () => {
-    console.log(age);
+   //console.log(age);
     let globalName = 'global name';
     {
     let name = 'jaehun';
-    console.log(name)
+   // console.log(name)
     name = 'jhun';
    
     }
@@ -21,9 +21,9 @@ const Note = () => {
 const char = 'c';
 const brendan = "brendan";
 const greeting = 'hello' + brendan;
-console.log(`value: ${greeting} , type: ${typeof greeting}`);
+//console.log(`value: ${greeting} , type: ${typeof greeting}`);
 const helloBob =` hi  ${brendan}!`;
-console.log(`value: ${helloBob} , type: ${typeof helloBob}`);
+//console.log(`value: ${helloBob} , type: ${typeof helloBob}`);
 
 const Symbol12 = Symbol('id');
 const Symbol13 = Symbol('id');
@@ -31,9 +31,37 @@ const Symbol13 = Symbol('id');
 
 const Symbol1 = Symbol.for('id');
 const Symbol2 = Symbol.for('id');
-
+//console.log(Symbol1 === Symbol2);
 // .for 를 붙여서 사용하면 전에 symbol로 만든 식별자랑 동일한 식별자를 만들어 Symbol1,Symbol2에 값은 현재 같다
-console.log(Symbol1 === Symbol2);
+
+
+
+// Equality
+
+const stringFive = '5';
+const nunberFive = 5;
+
+console.log(stringFive == nunberFive);
+console.log(stringFive != nunberFive);
+// ==
+// 타입 이랑 상관없이 값만 보고 판단한다
+console.log(stringFive === nunberFive);
+console.log(stringFive !== nunberFive);
+// ===
+// 값이 같아도 타입을 보고 판단한다
+
+
+const jae = { name: 'hun'};
+const jae2 = {name: 'hun'};
+const jae3 = jae;
+console.log(jae == jae2); // object의 경우 값이 같아도 reference 가 다르므로  false 반환
+console.log(jae == jae3); // object의 경우 값이 같고 reference 도 동일함으로 true 반환 
+
+
+
+
+
+
     return(
         <div> 연습장 용도</div>
     )
