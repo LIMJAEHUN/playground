@@ -1,6 +1,8 @@
 
 const Note = () => {
-   //console.log(age);
+  
+  /*
+    //console.log(age);
     let globalName = 'global name';
     {
     let name = 'jaehun';
@@ -56,10 +58,35 @@ const jae2 = {name: 'hun'};
 const jae3 = jae;
 console.log(jae == jae2); // object의 경우 값이 같아도 reference 가 다르므로  false 반환
 console.log(jae == jae3); // object의 경우 값이 같고 reference 도 동일함으로 true 반환 
+*/
 
 
+/*function
+function printHello() {
+    console.log("Hello");
 
+}
 
+printHello();
+
+function log(message){
+    console.log(message);
+
+}
+log("Hello12");
+log(1234);
+*/
+
+//Parmaters
+
+function changeName(obj){
+    obj.name = 'coder';
+
+}
+
+const ellie = { name: 'ellie'};
+changeName(ellie);
+console.log(ellie);
 
 
     return(
