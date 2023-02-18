@@ -1,4 +1,5 @@
 
+
 const Note = () => {
   
   /*
@@ -79,14 +80,98 @@ log(1234);
 
 //Parmaters
 
-function changeName(obj){
-    obj.name = 'coder';
+// function changeName(obj){
+//     obj.name = 'coder';
 
-}
+// }
 
-const ellie = { name: 'ellie'};
-changeName(ellie);
-console.log(ellie);
+// const ellie = { name: 'ellie'};
+// changeName(ellie);
+// console.log(ellie);
+
+// function sum(a,b){
+//     return a + b;
+// }
+// const result = sum(1,2);
+// console.log(`sum: ${sum(1,2)}`);
+
+// function randomQuiz(answer, printYes, printNo){
+//     if(answer === 'loveyou'){
+//         printYes();
+//     } else {
+//         printNo();
+//     }
+// }
+// const printYes = function () {
+//     console.log("yes!");
+// }
+// const printNo = function () {
+//     console.log("No!");
+// }
+// randomQuiz( "loveyou",printYes,printNo);
+// randomQuiz( "fuckyou",printYes,printNo);
+
+
+// 계산기 함수
+// function calculate ( command , a ,b){
+//     switch(command){
+//         case 'add':
+//             console.log(a+b);
+//             break;
+//         case 'divide':
+//             console.log(a/b);
+//             break;
+//         case 'substract':
+//             console.log(a-b);
+//             break;
+//         case 'multiply':
+//             console.log(a*b);
+//             break;
+//         case 'remainder':
+//            console.log(a%b);
+//             break;
+//     }
+// }
+// calculate('add' , 1,2);
+// calculate('divide' , 12,2);
+// calculate('substract' , 21,2);
+// calculate('multiply' , 4,2);
+// calculate('remainder' , 5,2);
+
+
+//class
+// class Person{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     speak(){
+
+//         console.log(`${this.name}:hello!`);
+//     }
+// }
+// const ellie = new Person('ellie',21);
+// console.log(ellie.name);
+// console.log(ellie.age);
+// ellie.speak();
+
+    class User{
+        constructor(firstname,lastname, age){
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.age = age;
+        }
+
+    get age() {
+        return this._age;
+    }
+    set age(value){
+        this._age = value <0 ? 0 :value;
+    }
+
+    }
+const user1 = new User('Lim','jaehun',-1);
+console.log(user1.age);
 
 
     return(
