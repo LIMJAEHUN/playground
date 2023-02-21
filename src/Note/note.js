@@ -220,12 +220,92 @@ const obj2 = new Object ();
 const name = 'ellie';
 const age = 23;
 function print(person) {
-    console.log
+    //console.log(person.name);
+    //Wconsole.log(person.age);
 }
 
-const eille = { name:  'ellie', age:4 };
-print(ellie);
 
+const ellie = { name:  'ellie', age:4 };
+print(ellie);
+    //console.log(ellie.name);
+   // console.log(ellie['name']);
+
+function printValue(obj, key){
+   // console.log(obj[key]);
+
+}
+
+printValue(ellie, 'name');
+printValue(ellie, 'age');
+
+// 객체 만들기 
+// const person1 = {name: 'bob', age:21};
+// const person2 = {name: 'jea', age:23};
+// const person3 = {name: 'hun', age:24};
+// const person4 = {name: 'lim', age:25};
+
+
+// constructor function
+const person5 = new Person('jae', 24);
+//console.log(person5);
+function Person( name , age){
+        this.name = name;
+        this.age = age;
+
+}
+
+
+// in operator 키가 있는지 없는지 확인
+// console.log('name' in ellie);
+// console.log('age' in ellie);
+// console.log('ran' in ellie);
+
+//     for  (let i in ellie ) {
+//         console.log(i);
+//     }
+// const array = [1,2,3,4,5]
+
+//     for (let value of array){
+//         console.log(value);
+//     }
+
+// Fun cloning
+
+    const user = { name:'ellie', age: 20};
+    const user2 = user;
+    user2.name = 'jae';
+    //console.log(user);
+
+    const user3 = {};
+
+    for ( let value in user){
+        user3[value] = user[value];
+
+       
+    }
+
+    //console.log(user3);
+    // const user4 ={};
+    // Object.assign(user4, user);
+    // console.log(user4);
+
+    const user4 = Object.assign({}, user);
+    console.log(user4);
+
+    const fruit = ['사과', '바나나', '오렌지', '딸기'];
+
+    for ( let i = 0; i < fruit.length; i++ ){
+
+        //console.log(array[i]);
+    }
+
+    for ( let i of fruit){
+        console.log(i);
+    }
+    fruit.forEach (function (fruit, index)  {
+
+        console.log( fruit, index);
+    })
 
     return(
         <div> 연습장 용도</div>
