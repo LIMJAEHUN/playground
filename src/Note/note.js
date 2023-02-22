@@ -289,23 +289,42 @@ function Person( name , age){
     // Object.assign(user4, user);
     // console.log(user4);
 
-    const user4 = Object.assign({}, user);
-    console.log(user4);
+    // const user4 = Object.assign({}, user);
+    // console.log(user4);
+
+    // const fruit = ['사과', '바나나', '오렌지', '딸기'];
+
+    // for ( let i = 0; i < fruit.length; i++ ){
+
+    //     //console.log(array[i]);
+    // }
+
+    // for ( let i of fruit){
+    //     console.log(i);
+    // }
+    // // fruit.forEach (function (fruit, index)  {
+
+    // //     console.log( fruit, index);
+    // // })
+    // fruit.forEach ((fruit) =>  console.log( fruit))
+
+    // fruit.push('포도','멜론');
+    // //console.log(fruit);
+    // fruit.pop();
+    // //console.log(fruit);
+
+    // fruit.unshift('맥주','소주')
+    // console.log(fruit)
+    // fruit.shift()
+    // console.log(fruit)
 
     const fruit = ['사과', '바나나', '오렌지', '딸기'];
-
-    for ( let i = 0; i < fruit.length; i++ ){
-
-        //console.log(array[i]);
-    }
-
-    for ( let i of fruit){
-        console.log(i);
-    }
-    fruit.forEach (function (fruit, index)  {
-
-        console.log( fruit, index);
-    })
+    console.log(fruit);
+    fruit.splice(1,1,"버섯","수박");
+    console.log(fruit);
+    const fruit2 = ["맥주","소주"];
+    const newfruit = fruit.concat(fruit2);
+    console.log(newfruit);
 
     return(
         <div> 연습장 용도</div>
