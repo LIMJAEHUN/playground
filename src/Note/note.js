@@ -318,14 +318,39 @@ function Person( name , age){
     // fruit.shift()
     // console.log(fruit)
 
-    const fruit = ['사과', '바나나', '오렌지', '딸기'];
-    console.log(fruit);
-    fruit.splice(1,1,"버섯","수박");
-    console.log(fruit);
-    const fruit2 = ["맥주","소주"];
-    const newfruit = fruit.concat(fruit2);
-    console.log(newfruit);
+    // const fruit = ['사과', '바나나', '오렌지', '딸기'];
+    // console.log(fruit);
+    // fruit.splice(1,1,"버섯","수박");
+    // console.log(fruit);
+    // const fruit2 = ["맥주","소주"];
+    // const newfruit = fruit.concat(fruit2);
+    // console.log(newfruit);
 
+     const fruit = ['사과', '바나나', '오렌지', '딸기'];
+     const fruit2 = fruit.join(', and');
+     //console.log(fruit2);
+
+    const fruit3 = '사과, 바나나, 오렌지, 딸기';
+    const fruit4 = fruit3.split(',' ,2);
+    console.log(fruit4);
+
+    // reverse
+    // const array = ['1','2','3','4','5'];
+    // const array2 = array.reverse();
+    // console.log(array2);
+    
+    
+    // splice
+    // const array = ['1','2','3','4','5'];
+    // const array2 = array.splice(0,2);
+    // console.log(array);
+    // console.log(array2);
+
+    
+    const array = ['1','2','3','4','5'];
+    const array2 = array.slice(2,5);
+    console.log(array);
+    console.log(array2);
     return(
         <div> 연습장 용도</div>
     )
