@@ -332,7 +332,7 @@ function Person( name , age){
 
     const fruit3 = '사과, 바나나, 오렌지, 딸기';
     const fruit4 = fruit3.split(',' ,2);
-    console.log(fruit4);
+  //  console.log(fruit4);
 
     // reverse
     // const array = ['1','2','3','4','5'];
@@ -347,10 +347,42 @@ function Person( name , age){
     // console.log(array2);
 
     
-    const array = ['1','2','3','4','5'];
-    const array2 = array.slice(2,5);
-    console.log(array);
-    console.log(array2);
+    // const array = ['1','2','3','4','5'];
+    // const array2 = array.slice(2,5);
+    // console.log(array);
+    // console.log(array2);
+
+   
+
+    class Student {
+
+        constructor( name , age, enrolled,score){
+                this.name = name;
+                this.age = age;
+                this.enrolled = enrolled;
+                this.score = score; 
+        }
+    }
+    const students = [
+        new Student('A',29,true,45),
+        new Student('B',28,false,85),
+        new Student('C',40,true,55),
+        new Student('D',15,true,65),
+        new Student('E',21,true,75),
+    ];
+
+  {  const result = students.find((student) => student.score === 65)
+        //console.log(student,index);
+        
+    console.log(result);
+}
+{  const result = students.filter((student) => student.enrolled);
+    //console.log(student,index);
+    
+console.log(result);
+}
+
+
     return(
         <div> 연습장 용도</div>
     )
