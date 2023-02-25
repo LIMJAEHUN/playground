@@ -326,12 +326,12 @@ function Person( name , age){
     // const newfruit = fruit.concat(fruit2);
     // console.log(newfruit);
 
-     const fruit = ['사과', '바나나', '오렌지', '딸기'];
-     const fruit2 = fruit.join(', and');
+//const fruit = ['사과', '바나나', '오렌지', '딸기'];
+  //   const fruit2 = fruit.join(', and');
      //console.log(fruit2);
 
-    const fruit3 = '사과, 바나나, 오렌지, 딸기';
-    const fruit4 = fruit3.split(',' ,2);
+   // const fruit3 = '사과, 바나나, 오렌지, 딸기';
+    //const fruit4 = fruit3.split(',' ,2);
   //  console.log(fruit4);
 
     // reverse
