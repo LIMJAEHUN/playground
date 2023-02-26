@@ -224,9 +224,8 @@ function print(person) {
     //Wconsole.log(person.age);
 }
 
-
 const ellie = { name:  'ellie', age:4 };
-print(ellie);
+//print(ellie);
     //console.log(ellie.name);
    // console.log(ellie['name']);
 
@@ -234,7 +233,6 @@ function printValue(obj, key){
    // console.log(obj[key]);
 
 }
-
 printValue(ellie, 'name');
 printValue(ellie, 'age');
 
@@ -275,13 +273,9 @@ function Person( name , age){
     const user2 = user;
     user2.name = 'jae';
     //console.log(user);
-
     const user3 = {};
-
     for ( let value in user){
         user3[value] = user[value];
-
-       
     }
 
     //console.log(user3);
@@ -373,12 +367,10 @@ function Person( name , age){
 
   {  const result = students.find((student) => student.score === 65)
         //console.log(student,index);
-        
     console.log(result);
 }
 {  const result = students.filter((student) => student.enrolled);
     //console.log(student,index);
-    
 console.log(result);
 }
 
