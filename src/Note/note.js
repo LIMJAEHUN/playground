@@ -367,11 +367,23 @@ function Person( name , age){
 
   {  const result = students.find((student) => student.score === 65)
         //console.log(student,index);
-    console.log(result);
+    //console.log(result);
 }
 {  const result = students.filter((student) => student.enrolled);
     //console.log(student,index);
-console.log(result);
+    //console.log(result);
+}
+{
+    const result = students.map((student) => student.score);
+    //console.log(result);
+}
+{
+    const result = students.some((student) => student.score < 50);
+    console.log(result);
+}
+{
+    const result = students.every((student) => student.score < 50);
+    console.log(result);
 }
 
 
