@@ -379,14 +379,51 @@ function Person( name , age){
 }
 {
     const result = students.some((student) => student.score < 50);
-    console.log(result);
+   // console.log(result);
 }
 {
     const result = students.every((student) => student.score < 50);
-    console.log(result);
+  //  console.log(result);
 }
+{
+    const result = students.reduce((prev, curr) =>prev + curr.score,0);
+  //  console.log(result /students.length);
+}
+{
+    const result = students
+    .map((student) => student.score)
+    .filter((score) => score >= 50)
+    .join();
+   // console.log(result);
+}
+{
+    const result =students
+    .map((student)=> student.score)
+    .sort((a,b) => b - a)
+    .join();
+ //   console.log(result);
 
+ const array = [ 'apple' , 'banana', 'orange'];
+ // 배열을 string 으로 변환하기 
+ // join 
+ // - 배열에 있는 모든 아이템을 더해서 문자형으로 반환해준다
+ // - 단순히 변환하는 것이 아니라 separator 로 전달 받은 문자열을 통해서 각 구문자를 넣어서 string으로 만든다
 
+    {
+        const result = array.join(' and ');
+        console.log(result);
+    }
+// 주어진 문자열을 배열 만들기
+// split
+// - 구분 문자 , limt(개수)을 전달 받아 string을 여러가지의 문자열로 잘개 나누어준다 
+   {
+    const array2 = '소주 ,맥주 ,소맥';
+    const result = array2.split(',');
+    console.log(result);
+    
+   } 
+
+}
     return(
         <div> 연습장 용도</div>
     )
