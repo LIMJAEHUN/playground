@@ -410,17 +410,37 @@ function Person( name , age){
  // - 단순히 변환하는 것이 아니라 separator 로 전달 받은 문자열을 통해서 각 구문자를 넣어서 string으로 만든다
 
     {
-        const result = array.join(' and ');
-        console.log(result);
+        const result = array.join(' and '); // , limit 전달
+       // console.log(result);
     }
 // 주어진 문자열을 배열 만들기
 // split
 // - 구분 문자 , limt(개수)을 전달 받아 string을 여러가지의 문자열로 잘개 나누어준다 
    {
     const array2 = '소주 ,맥주 ,소맥';
-    const result = array2.split(',');
-    console.log(result);
+    const result = array2.split(',' , 2); // , limit 전달 , 구분 문자 없을시 하나로 묶여 배열로 만들어진다
+ //   console.log(result);
+
+ // 배열 거꾸로 뒤집기
+ // reverse
+ // 배열에 있는아이템으 순서를 거꾸로 만든다
+ // 배열 자체의 순서를 뒤집기 때문에 현재 array도 값이 거꾸로 된 상태 
+
+
+    {
+        const array = [ '1','2','3','4','5'];
+        const result = array.reverse();
+        //console.log(result);
+    }
     
+ // 주어진 배열에서 앞에 두개 제거 하기
+ // splice
+ {
+    const array = [ '1','2','3','4','5'];
+    const result = array.splice(0,2);
+    console.log(result);
+}
+
    } 
 
 }
