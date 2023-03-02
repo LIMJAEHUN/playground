@@ -434,10 +434,14 @@ function Person( name , age){
     }
     
  // 주어진 배열에서 앞에 두개 제거 하기
- // splice
+ // splice , 
+ // 배열을 수정해서 리턴
+ // slice
+ // 배열의 수정하지 않고 특정한 부분만 리턴
+ 
  {
-    const array = [ '1','2','3','4','5'];
-    const result = array.splice(0,2);
+    const array = [ '1','2','3','4','5']; // splice 사용시 기존에 있는 배열은 변경사항 없음
+    const result = array.splice(0,2); // 배열의 0부터 2까지 아이템을 삭제한 후 나머지 값을 변수에 넣는다
     console.log(result);
 }
 
