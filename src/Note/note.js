@@ -445,7 +445,69 @@ function Person( name , age){
     console.log(result);
 }
 
+// 50정 이상인 학생 찾기
+// find
+// 배열에서 전달된 콜백함 수가 true (콜백함수는 boolean 타입을 리턴해야한다)가되면 첫번째로 찾아진 함수를 리턴 한다
+// 콜백 함수를 만들어서 전달해야하는 점 잊지말자
+{
+    const result = students.find((student) => student.score === 65)
+   // console.log(result);
+}
+{
+    const result = students.find(function(student) {
+        return student.score ===65;
+        
+    }); 
+    //console.log(result);
+}
+// 수업에 등록한 학생만 출력하기
+// filter
+
+{
+    const result = students.filter(function(student) {
+        return student.enrolled;
+
+    });
+  //  console.log(result);
+}
+{
+    const result = students.filter((student)=>student.enrolled)
+    //console.log(result);
+}
+// 학생들의 점수만 가져와 배열 만들기
+// map
+// 배열 안의 있는 요소 한가지 한가리를 다른 것으로 바꿔주는 것
+// 콜백함수를 호출 하여 배열을 거쳐 각각의 다른 요소로 바꿔준다
+// 배열의 요소들을 콜백 함수 안에 넣어 각가지 다른 요소들로 만든다
+// 배열안에 있는 모든 요소들을 전달 받은 콜백함수로 가공하여 대체 한다
+
+{
+    const result = students.map((student) => student.score)
+   // console.log(result)
+}
+// 학생들중에 60점 아래있는 사람이 있는지 확인하기
+// some
+// 배열에서 하나라도 만족하는 것이 있으면 true 리턴
+// every
+// 배열에 들어 있는 모든 요소들이 조건을 충족하여야 true 리턴
+{
+    const result = students.some((student) => student.score <= 60)
+   // console.log(result);
+    const result2 = !students.every((student) => student.score >= 60)
+    //console.log(result2);
+}
+// 학생들의 평균구하기
+// redurce
+// 전달하는 콜백함수에서 값을 리턴할때 누적된 값을 전달
+// 배열안에있는 모든값을 누적할때(모을때 )
+// 시작점 부터 모든 배열을 돌면서 특정값을 누적할떄 사용
+{
+    const result = students.reduce( (prev,curr)=>prev + curr.score,0);
+    console.log(result / students.length);
+}
+
    } 
+
 
 }
     return(
