@@ -1,4 +1,4 @@
-
+import JsonNote from "./Jsonnote";
 
 const Note = () => {
   
@@ -503,7 +503,26 @@ function Person( name , age){
 // 시작점 부터 모든 배열을 돌면서 특정값을 누적할떄 사용
 {
     const result = students.reduce( (prev,curr)=>prev + curr.score,0);
-    console.log(result / students.length);
+    //console.log(result / students.length);
+}
+// 학생들의 점수 만 모아서 문자열인 배열로 만들기
+{
+    const result = students
+    .map((student) => student.score)
+    .filter((score) => score >=70)
+    .join();
+    //console.log(result);
+}
+// 학생들의 배열을 낮은 점수 순으로 문자열 배열로 만들기
+// sort
+// 콜백함수로 a , b 현재값과 이전값이 전달이된다
+// 만약 - 값을 리턴하면 처음보다 작다고 간주 되어 저서 정렬이된다 
+{
+    const result = students
+    .map((student)=> student.score)
+    .sort((a,b) =>a-b)
+    .join();
+    console.log(result);
 }
 
    } 
@@ -511,7 +530,12 @@ function Person( name , age){
 
 }
     return(
+        <>
         <div> 연습장 용도</div>
+        <JsonNote/>
+        </>
+     
+        
     )
 
 
