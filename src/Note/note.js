@@ -1,4 +1,5 @@
 import JsonNote from "./Jsonnote";
+import Callbackhell from "./Callbackhell";
 
 const Note = () => {
   
@@ -532,7 +533,8 @@ function Person( name , age){
     return(
         <>
         <div> 연습장 용도</div>
-        <JsonNote/>
+        <Callbackhell/>
+      
         </>
      
         
