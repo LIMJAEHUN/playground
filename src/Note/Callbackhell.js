@@ -46,6 +46,16 @@ const callbackhell =()=>{
         }
        
     }
+    // const userStorage = new UserStorage();
+    // const id = prompt('enter your id');
+    // const password = prompt('enter your passwrod');
+    // userStorage
+    // .loginUser(id,password)
+    // .then(userStorage.getRoles)
+    // .then(user => alert(`hello ${user.name}, you have a ${user .role} role`))
+    // .catch(console.log);
+     
+        
     const userStorage = new UserStorage();
     const id = prompt('enter your id');
     const password = prompt('enter your passwrod');
