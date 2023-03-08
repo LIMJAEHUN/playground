@@ -1,3 +1,10 @@
+import styled from "styled-components";
+
+const Test = styled.div`
+    width: 200px;
+    background-color: blue;
+`
+
 const callbackhell =()=>{
 
     //
@@ -76,7 +83,7 @@ const callbackhell =()=>{
         );
 
 return(
-    <div> callback study</div>
+    <Test> callback study</Test>
 )
 
 }

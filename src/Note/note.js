@@ -2,7 +2,7 @@ import JsonNote from "./Jsonnote";
 import Callbackhell from "./Callbackhell";
 import Asynctest from "./async";
 import Promisenote from "./Promise";
-
+import Login from "./login";
 const Note = () => {
   
   /*
@@ -535,7 +535,8 @@ function Person( name , age){
     return(
         <>
         <div> 연습장 용도</div>
-        <Promisenote/>
+        <Promisenote>Login</Promisenote>
+      
       
         </>
      
