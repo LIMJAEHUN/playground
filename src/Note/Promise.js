@@ -73,6 +73,9 @@ const Promisenote =()=>{
 
     getHen()
         .then(getEgg)
+        .catch(error => {
+            return '빵';
+        })
         .then(cook)
         .then(console.log)
         .catch(console.log);

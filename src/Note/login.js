@@ -9,10 +9,14 @@ const Loginarea = styled.div`
     top:-30%;
     background-color: white;
     border: 1px solid black;
+    .lie{left: 20%;}
 `
 const Inputarea = styled.div`
 
 `
+const L2 = styled.h1`
+    color:  red;
+    `
 const Inputbox = styled.div`
     width: 200px;
     background-color: white;
@@ -20,6 +24,9 @@ const Inputbox = styled.div`
     left: 10%;
     padding: 2%;
     border: 1px solid black;
+    .lie{
+        left: 20%;
+    }
 `
 const LoginButton = styled.button`
     position: relative;
@@ -29,9 +36,10 @@ const Login = () =>{
 
     return(
         <Loginarea>Login
+            <L2>123</L2>
             <Inputarea>
                 <Inputbox>ID</Inputbox>
-                <Inputbox>PW</Inputbox>
+                <Inputbox className="lie">PW</Inputbox>
                 <LoginButton>Lbutton</LoginButton>
                 <LoginButton>찾기</LoginButton>
              </Inputarea>
