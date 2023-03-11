@@ -4,7 +4,6 @@ const Test = styled.div`
     width: 200px;
     background-color: blue;
 `
-
 const callbackhell =()=>{
 
     //
@@ -59,14 +58,7 @@ const callbackhell =()=>{
         }
        
     }
-    // const userStorage = new UserStorage();
-    // const id = prompt('enter your id');
-    // const password = prompt('enter your passwrod');
-    // userStorage
-    // .loginUser(id,password)
-    // .then(userStorage.getRoles)
-    // .then(user => alert(`hello ${user.name}, you have a ${user .role} role`))
-    // .catch(console.log);
+
      
         
     const userStorage = new UserStorage();
@@ -77,21 +69,7 @@ const callbackhell =()=>{
     .then(user => alert(`hello ${user.name}, you have a ${user .role} role`) )
     .catch(console.log);
 
-    // userStorage.loginUser(
-    //     id,
-    //     password, 
-    //     user => {
-    //         userStorage.getRoles(
-    //             user, 
-    //             userWithRole => {
-    //                 alert(`hello ${userWithRole.name}, you have a ${userWithRole .role} role`)
-    //             },
-    //             error => {
-    //                 console.log(error)
-    //             })
-    //     },
-    //     (error) =>{console.log(error)}
-    //     );
+   
 
 return(
     <Test> callback 복사본</Test>
