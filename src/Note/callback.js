@@ -65,9 +65,24 @@ const callbackhell =()=>{
     const id = prompt('enter your id');
     const password = prompt('enter your passwrod');
 
-    userStorage.loginUser(id, password)
-    .then(user => alert(`hello ${user.name}, you have a ${user .role} role`) )
-    .catch(console.log);
+    
+    async function userStorage2() {
+        const userPromise = userStorage.loginUser(id, password); 
+        const rolePromise = userStorage.getRoles(id, password); 
+        const user = await userPromise;
+        const role = await rolePromise;
+      
+        return alert(`hello ${role.name}, you have a ${role.role} role`) 
+    }
+    userStorage2();
+
+
+
+    // userStorage
+    //     .loginUser(id, password)
+    //     .then(userStorage.getRoles)
+    //     .then(user => alert(`hello ${user.name}, you have a ${user .role} role`) )
+    //     .catch(console.log);
 
    
 
